@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="container-navbar">
+   <div class="mainlogo">
+         <a href="index.html"><img src="images/favicon.png" alt="logo" width="150" height="150"></a>
+        </div>
+    <div class="dropdown">
+        <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+
+
+
+    
+</div>
+<form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="Your Name" required>
+    <input type="submit" onClick="getNameInput()">
+  </form>
+  <form onsubmit="return false;">
+    <label for="formName">Money:</label>
+    <input type="number" id="moneyField" name="formName" min="0" max="9999999999999" placeholder="How much money are you gonna spend?" required>
+    <input type="submit" onClick="getMoneyInput()">
+  </form>
+  <div id="JavaScriptOutput">
 
   
+
+  </div>
+
+
+
 <script src="script.js"></script>
 </body>
 </html>
-
-
