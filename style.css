@@ -80,3 +80,11 @@
   height: 350px;
   object-fit: cover;
 }
+
+/* Products */
+
+.products {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 20px;
+}
