@@ -2,8 +2,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -72,14 +72,11 @@
 
 
 .bigimage {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row: 2;
+  width: 100%;
 }
 
 .bigimage img {
   width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: cover;
-  transition: transform 0.3s ease;
 }
