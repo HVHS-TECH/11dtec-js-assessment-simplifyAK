@@ -3,48 +3,64 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
 </head>
 <body>
 
-<div class="container-navbar">
+<div class="navbar">
+    
    <div class="mainlogo">
-         <a href="index.html"><img src="images/favicon.png" alt="logo" width="150" height="150"></a>
+        
+        <a href="index.html"><img src="images/sweets.png" alt="logo" width="150" height="150"></a>
+   </div>
+        <div class="cartnavbar">
+        <a href="orderpage.html"><img src="images/realcart.png"</a>
         </div>
-    <div class="dropdown">
+        <div class="dropdown">
         <button class="dropbtn">☰</button>
         <div class="dropdown-content">
-            <a href="index.html">Home</a>
-           
+        <a href="index.html">Home</a>
+        <a href="orderpage.html">Cart</a>
         </div>
-    </div>
+        </div>
+    
 </div>
 <div class="container">
-<div class="bigimage"><img src="images/mrbeast.jpg" alt="mainimage"></a></div>
+<div class="bigimage"><img src="images/sweets.jpg" alt="mainimage"></a></div>
 
 <div class="products">
     <div class="product">
     <img src="images/cake.jpg">
+    <p>The best cake </p>
+    <p>$7.50</p>
     <button>Add to cart</button>
     </div>
 
     <div class="product">
     <img src="images/crepes.jpg">
+    <p>Fluffy delectable crepes</p>
+    <p>$12.50</p>
     <button>Add to cart</button>
     </div>
 
     <div class="product">
     <img src="images/milkshake.jpg">
+    <p>Thick, Sugary Shake that will keep you energised</p>
+    <p>$8.50</p>
     <button>Add to cart</button>
     </div>
 
     <div class="product">
     <img src="images/sweeticedtea.jpg">
+    <p>A sweet tea that will refresh you on the hottest of days</p>
+    <p>$7.50</p>
     <button>Add to cart</button>
     </div>
 
     <div class="product">
     <img src="images/feastables.jpg">
+    <p>Chocolate bar thats kinda good i think</p>
+    <p>$999.99</p>
     <button>Add to cart</button>
     </div>
     
@@ -52,23 +68,6 @@
 
 
 </div>
-<form onsubmit="return false;">
-    <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName" placeholder="Your Name" required>
-    <input type="submit" onClick="getNameInput()">
-  </form>
-  <form onsubmit="return false;">
-    <label for="formName">Money:</label>
-    <input type="number" id="moneyField" name="formName" min="0" max="9999999999999" placeholder="How much money are you gonna spend?" required>
-    <input type="submit" onClick="getMoneyInput()">
-  </form>
-  <div id="JavaScriptOutput">
-
-  
-
-  </div>
-
-
 
 <script src="script.js"></script>
 </body>
