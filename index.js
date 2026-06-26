@@ -7,15 +7,9 @@ const NAME_FIELD = document.getElementById("nameField");
 const MONEY_FIELD = document.getElementById("moneyField");
 
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-let prices = {
-    Cake: 7.50,
-    Crepes: 12.50,
-    Feastables: 10,
-    SweetIcedTea: 7.50,
-    Milkshake: 8.50
-};
+
 
 
 function getNameInput() {
@@ -28,11 +22,18 @@ function calculateChange(_money, _price) {
     return change;
 }
 
-function addToCart(item) {
-    cart.push(item);
-    OUTPUT.innerHTML += "<br>Added: " + item;
-}
+function addToCart(name, price) {
+    let item = {
+        name: name,
+        price: price
+    };
 
+    cart.push(item);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    OUTPUT.innerHTML += "<br>Added " + name + " ($" + price.toFixed(2) + ") to cart.";
+}
 
 
 function getMoneyInput() {
@@ -61,7 +62,7 @@ function getMoneyInput() {
     }
    
 }
-let foodArray = ["Cake", "Crepes", "Feastables", "SweetIcedTea", "Milkshake"]
+
 
 
 
