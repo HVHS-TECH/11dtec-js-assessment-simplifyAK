@@ -33,6 +33,8 @@ function addToCart(item) {
     OUTPUT.innerHTML += "<br>Added: " + item;
 }
 
+
+
 function getMoneyInput() {
     let userMoney = Number(MONEY_FIELD.value);
 
