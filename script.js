@@ -7,7 +7,15 @@ const NAME_FIELD = document.getElementById("nameField");
 const MONEY_FIELD = document.getElementById("moneyField");
 
 
+let cart = [];
 
+let prices = {
+    Cake: 7.50,
+    Crepes: 12.50,
+    Feastables: 10,
+    SweetIcedTea: 7.50,
+    Milkshake: 8.50
+};
 
 
 function getNameInput() {
@@ -18,6 +26,11 @@ function getNameInput() {
 function calculateChange(_money, _price) {
     let change = _money - _price;
     return change;
+}
+
+function addToCart(item) {
+    cart.push(item);
+    OUTPUT.innerHTML += "<br>Added: " + item;
 }
 
 function getMoneyInput() {
