@@ -2,7 +2,14 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let OUTPUT = document.getElementById("JavaScriptOutput");
 
+const NAME_FIELD = document.getElementById("nameField");
+const MONEY_FIELD = document.getElementById("moneyField");
+
 let total = 0;
+let itemReceipt = ['Cake', 'Crepes', 'Milkshake', 'SweetIcedTea', 'Feastables'];
+
+
+
 
 if (cart.length === 0) {
     OUTPUT.innerHTML = "<h2>Your Cart is Empty</h2>";
