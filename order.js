@@ -25,6 +25,24 @@ if (cart.length === 0) {
 }
 
 
+function getNameInput() {
+    let userName = NAME_FIELD.value;
+    OUTPUT.innerHTML += "<br>Your name is "+ userName+""
+}
+
+
+function getMoneyInput() {
+    let userMoney = Number(MONEY_FIELD.value);
+
+    if (userMoney < total) {
+        OUTPUT.innerHTML += "<p>Sorry, you don't have enough money.</p>";
+    } else {
+        let change = userMoney - total;
+
+        OUTPUT.innerHTML += "<p>You paid $" + userMoney.toFixed(2) + "</p>";
+        OUTPUT.innerHTML += "<p>Your change is $" + change.toFixed(2) + "</p>";
+    }
+}
 function clearCart() {
     localStorage.removeItem("cart");
     location.reload();

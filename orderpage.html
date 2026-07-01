@@ -31,7 +31,16 @@
 
 
 </div>
-
+<form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="Your Name" required>
+    <input type="submit" onClick="getNameInput()">
+  </form>
+  <form onsubmit="return false;">
+    <label for="formName">Money:</label>
+    <input type="number" id="moneyField" name="formName" min="0" max="9999999999999">
+    <input type="submit" onClick="getMoneyInput()">
+  </form>
 <button onclick="clearCart()">Clear Order</button>
   <div id="JavaScriptOutput">
   </div>
