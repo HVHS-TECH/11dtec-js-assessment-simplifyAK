@@ -41,6 +41,7 @@ function getMoneyInput() {
 
         OUTPUT.innerHTML += "<p>You paid $" + userMoney.toFixed(2) + "</p>";
         OUTPUT.innerHTML += "<p>Your change is $" + change.toFixed(2) + "</p>";
+        OUTPUT.innerHTML += "<p>Press Clear Order To Restart</p>"
     }
 }
 function clearCart() {
