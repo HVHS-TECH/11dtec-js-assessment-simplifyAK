@@ -32,7 +32,7 @@ function addToCart(name, price) {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    OUTPUT.innerHTML += "<br>Added " + name + " ($" + price.toFixed(2) + ") to cart.";
+    OUTPUT.innerHTML = "<br>Added " + name + " ($" + price.toFixed(2) + ") to cart.";
 }
 
 
