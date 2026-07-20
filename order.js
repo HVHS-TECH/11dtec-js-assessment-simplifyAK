@@ -21,7 +21,7 @@ if (cart.length === 0) {
         total += item.price;
     }
 
-    OUTPUT.innerHTML += "<br><strong>Total: $" + total.toFixed(2) + "</strong>";
+    OUTPUT.innerHTML += "<br><p>Total: $" + total.toFixed(2) + "</p>";
 }
 
 
