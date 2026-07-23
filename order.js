@@ -25,6 +25,8 @@ if (cart.length === 0) {
 }
 
 
+//* Functions */
+
 function getNameInput() {
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML += "<br>Your name is "+ userName+""
@@ -48,3 +50,6 @@ function clearCart() {
     localStorage.removeItem("cart");
     location.reload();
 }
+
+
+//**End of Functions */

@@ -8,6 +8,12 @@
     background-color: #AFD2F1;
 }
 
+.gallerycontainer {
+    display:grid;
+    grid-template-columns: 2/3fr 1/3fr;
+    background-color: #fffdd0;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
