@@ -6,15 +6,19 @@ const NAME_FIELD = document.getElementById("nameField");
 const MONEY_FIELD = document.getElementById("moneyField");
 
 let total = 0;
-let itemReceipt = ['Cake', 'Crepes', 'Milkshake', 'SweetIcedTea', 'Feastables'];
+let menuItems = ['Cake - $7.50', 'Crepes - $12.50', 'Milkshake - $8.50', 'SweetIcedTea - $7.50', 'Feastables - $6.50'];
+
+for (let item of menuItems) {
+    OUTPUT.innerHTML += item + "<br>";
+}
 
 
 
 
 if (cart.length === 0) { 
-    OUTPUT.innerHTML = "<h2>Your Cart is Empty</h2>";
+    OUTPUT.innerHTML += "<h2>Your Cart is Empty</h2>";
 } else {
-    OUTPUT.innerHTML = "<h2>Your Cart</h2>";
+    OUTPUT.innerHTML += "<h2>Your Cart</h2>";
 
     for (let item of cart) {
         OUTPUT.innerHTML += item.name + " - $" + item.price.toFixed(2) + "<br>";
@@ -31,20 +35,27 @@ if (cart.length === 0) {
 
 function getNameInput() {
     let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<br>Your name is "+ userName+""
-
-    if (NAME_FIELD === NaN) {
-        
+    if (userName === "") {
+     OUTPUT.innerHTML += "<p>Please enter your name</p>";
     }
+    OUTPUT.innerHTML += "<br>Your name is "+ userName+""
 }
 
 
 function getMoneyInput() {
+
+   if (cart.length === 0) {
+    OUTPUT.innerHTML += "<p>Your Cart is Empty</p>";
+    return;
+   }
+
     let userMoney = Number(MONEY_FIELD.value);
 
     if (userMoney < total) {
+        let amountNeeded = total - userMoney;
         OUTPUT.innerHTML += "<p>Sorry, you don't have enough money.</p>";
-        OUTPUT.innerHTML += "<p>You need $" + (total.toFixed(2) - userMoney.toFixed(2)) + " to pay for your order</p>"
+        OUTPUT.innerHTML += "<p>You need $" + (amountNeeded.toFixed(2)) + " to pay for your order</p>";
+        return;
     } else {
         let change = userMoney - total;
 

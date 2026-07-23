@@ -3,8 +3,7 @@ console.log("Hello world!")
 
 
 const OUTPUT = document.getElementById("JavaScriptOutput")
-const NAME_FIELD = document.getElementById("nameField");
-const MONEY_FIELD = document.getElementById("moneyField");
+
 
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
