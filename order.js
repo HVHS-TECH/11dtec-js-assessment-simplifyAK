@@ -11,7 +11,7 @@ let itemReceipt = ['Cake', 'Crepes', 'Milkshake', 'SweetIcedTea', 'Feastables'];
 
 
 
-if (cart.length === 0) {
+if (cart.length === 0) { 
     OUTPUT.innerHTML = "<h2>Your Cart is Empty</h2>";
 } else {
     OUTPUT.innerHTML = "<h2>Your Cart</h2>";
@@ -22,6 +22,8 @@ if (cart.length === 0) {
     }
 
     OUTPUT.innerHTML += "<br><p>Total: $" + total.toFixed(2) + "</p>";
+
+    //* Show the form normally*//
 }
 
 
@@ -30,6 +32,10 @@ if (cart.length === 0) {
 function getNameInput() {
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML += "<br>Your name is "+ userName+""
+
+    if (NAME_FIELD === NaN) {
+        
+    }
 }
 
 
@@ -38,6 +44,7 @@ function getMoneyInput() {
 
     if (userMoney < total) {
         OUTPUT.innerHTML += "<p>Sorry, you don't have enough money.</p>";
+        OUTPUT.innerHTML += "<p>You need $" + (total.toFixed(2) - userMoney.toFixed(2)) + " to pay for your order</p>"
     } else {
         let change = userMoney - total;
 
