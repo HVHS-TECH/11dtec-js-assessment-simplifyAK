@@ -43,7 +43,7 @@ if (cart.length === 0) {
 function getNameInput() {
     let userName = NAME_FIELD.value;
     if (userName === "") {
-     alert("Please enter your name");
+     alert("Please enter your name.");
     }
     OUTPUT.innerHTML += "<br>Your name is "+ userName+""
 }
@@ -52,7 +52,7 @@ function getNameInput() {
 function getMoneyInput() {
     //* Stops the action if there is no items in the cart *//
    if (cart.length === 0) {
-    alert("Please enter items into the cart");
+    alert("Please enter items into the cart before you pay.");
    }
 
     let userMoney = Number(MONEY_FIELD.value);

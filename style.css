@@ -1,6 +1,3 @@
-/* ===========================
-   GENERAL
-=========================== */
 
 * {
     margin: 0;
@@ -15,9 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===========================
-   CONTAINERS
-=========================== */
+/* Container */
 
 .container {
     display: grid;
@@ -35,14 +30,12 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    background: #fffdd0;
+    background: #AFD2F1;
     padding: 25px;
     border-radius: 15px;
 }
 
-/* ===========================
-   NAVBAR
-=========================== */
+/* Navbar */
 
 .navbar {
     display: grid;
@@ -59,9 +52,7 @@ body {
     font-weight: bold;
 }
 
-/* ===========================
-   DROPDOWN
-=========================== */
+/* Dropdown */
 
 .dropdown {
     position: relative;
@@ -112,9 +103,7 @@ body {
     display: block;
 }
 
-/* ===========================
-   CART
-=========================== */
+/* Cart */
 
 .cartnavbar {
     justify-self: end;
@@ -129,9 +118,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ===========================
-   HERO IMAGE
-=========================== */
+/* Big image */
 
 .bigimage img {
     width: 100%;
@@ -141,9 +128,7 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-/* ===========================
-   PRODUCTS
-=========================== */
+/* Product */
 
 .products {
     display: grid;
@@ -196,18 +181,14 @@ body {
     color: white;
 }
 
-/* ===========================
-   LINKS
-=========================== */
+/* Link colour */
 
 button a {
     text-decoration: none;
     color: inherit;
 }
 
-/* ===========================
-   HEADINGS
-=========================== */
+/* Heading */
 
 h1 {
     font-size: 42px;
@@ -224,9 +205,15 @@ h3 {
     font-size: 22px;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* Image */
+.galleryimage img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* makes it responsive i guess */
 
 @media (max-width: 900px) {
 
@@ -236,8 +223,7 @@ h3 {
         text-align: center;
     }
 
-    .mainlogo,
-    .cartnavbar {
+    .mainlogo, .cartnavbar {
         justify-self: center;
     }
 
