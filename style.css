@@ -235,3 +235,130 @@ h3 {
         height: 300px;
     }
 }
+
+
+/* Order Page Css */
+
+form {
+    width: 70%;
+    max-width: 600px;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+form label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+form input[type="text"],
+form input[type="number"] {
+
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+form input:focus {
+    outline: none;
+    border-color: #AFD2F1;
+}
+
+
+/* Submit buttons */
+
+form input[type="submit"] {
+
+    background: #AFD2F1;
+    border: none;
+
+    padding: 12px 30px;
+    border-radius: 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+form input[type="submit"]:hover {
+
+    background: #7EB8E8;
+    color: white;
+
+}
+
+
+/* Clear and Back buttons */
+
+body > button {
+
+    background: #AFD2F1;
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin: 10px;
+
+    transition: 0.3s;
+}
+
+
+body > button:hover {
+
+    background: #7EB8E8;
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+button a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+/* JavaScript output / Receipt */
+
+#JavaScriptOutput {
+
+    width: 70%;
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    background: #fffdd0;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    font-size: 18px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+}
